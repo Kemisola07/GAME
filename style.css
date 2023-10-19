@@ -1,0 +1,293 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+#city1{
+    position: fixed;
+    width: 100vw;
+    height: 70vh;
+
+}
+#balu{
+    width: 500px;
+    height: 300px;
+    left: 40%;
+    position: absolute;
+    animation: balu 2s infinite linear;
+}
+@keyframes balu{
+    100%{
+        transform: translate(-900px);
+    }
+}
+/* #city1{
+    width: 100vw;
+    position: absolute;
+    height: 0vh;
+    top: 30.5%;
+    left: -100%;
+} */
+
+#city2{
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+}
+
+#track1{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 70%;
+    left: -100%;
+}
+
+#track2{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 70%;
+    left: 0%;
+}
+
+#car-body{
+    position: fixed;
+    height: 90px;
+    top: 70%;
+    left: 40%;
+}
+
+#car-wheel-left{
+    position: fixed;
+    height: 40px;
+    top: 77.9%;
+    left: 54.5%;
+}
+
+#car-wheel-right{
+    position: fixed;
+    height: 47px;
+    top: 77.9%;
+    left: 43.5%;
+}
+
+@keyframes car-body-animation{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(3%);
+    }
+}
+
+@keyframes road1 {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes road2 {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes city1 {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes city2 {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes wheel {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#start{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    border: solid 3px  whitesmoke ;
+    border-radius: 20px;
+    top: 90%;
+    color: whitesmoke;
+    background: black;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#stop{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    border: solid 3px  whitesmoke ;
+    border-radius: 20px;
+    top: 90%;
+    color: whitesmoke;
+    background: black;
+    font-size: x-large;
+    cursor: pointer;
+    left: 500px;
+}
+audio{
+    visibility: hidden;
+}
+@media (max-width:991px) {
+    #stop{
+        left: 130px;
+    } 
+    #car-wheel-left{
+        position: fixed;
+        height: 40px;
+        top: 77.9%;
+        left: 74.7%;
+    }
+    #city1{
+        position: fixed;
+        width: 100vw;
+        height: 70vh;
+        animation: city1 8s linear infinite reverse;
+    }
+    
+    #car-wheel-right{
+        position: fixed;
+        height: 47px;
+        top: 77.9%;
+        left: 33.5%;
+    }  
+    #car-body{
+        position: fixed;
+        height: 90px;
+        top: 70%;
+        left: 20%;
+    }
+    #city2{
+        width: none;
+        position: fixed;
+        height: none;
+        visibility: hidden;
+    }
+    #track1{
+        position: absolute;
+        width: 100vw;
+        height: 30vh;
+        top: 70%;
+        left: -100%;
+    }
+    
+    #track2{
+        position: absolute;
+        width: none;
+        height: none;
+        top: none;
+        left: none;
+        visibility: hidden;
+    }
+}
+
+
+
+
+#city11{
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    top: 30.5%;
+    left: -100%;
+}
+
+#city21{
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    top: 30.5%;
+    left: 0%;
+}
+
+#track11{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 40%;
+    left: -100%;
+}
+
+#track21{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 40%;
+    left: 0%;
+}
+
+#car-body1{
+    position: fixed;
+    height: 90px;
+    top: 63%;
+    left: 60%;
+}
+
+#car-wheel-right1{
+    position: fixed;
+    height: 47px;
+    top: 70.9%;
+    left: 63.7%;
+}
+
+#car-wheel-left1{
+    position: fixed;
+    height: 40px;
+    top: 70.9%;
+    left: 74.6%;
+}
+#horn{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    border: solid 3px  whitesmoke ;
+    border-radius: 20px;
+    top: 90%;
+    color: whitesmoke;
+    background: black;
+    font-size: x-large;
+    cursor: pointer;
+    left: 10%;
+}
+
+#off{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    border: solid 3px  whitesmoke ;
+    border-radius: 20px;
+    top: 90%;
+    color: whitesmoke;
+    background: black;
+    font-size: x-large;
+    cursor: pointer;
+    left: 24%;
+}
